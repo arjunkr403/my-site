@@ -1,0 +1,19 @@
+.nav{
+    height: 100px;
+    .wrapp{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 100%;
+    }
+    .social{
+        display: flex;
+        gap: 20px;
+    }
+    img{
+        aspect-ratio: 1;
+        height: 30px;       
+    }
+}

@@ -1,0 +1,32 @@
+.project {
+    height: 100%;
+    background: linear-gradient(180deg, #002F51, #003459);
+  
+    .wrapper {
+      display: flex;
+      padding-top: 100px;
+      padding-left: 100px;
+      max-width: calc(100% - 100px);
+      height: calc(100% - 100px);
+  
+      div {
+        cursor: pointer;
+        flex: 1;
+        transition: flex 0.5s ease; // Add transition for flex property
+      }
+  
+      div:hover {
+        flex: 2;
+        span {
+          opacity: 0;
+          transition: opacity 0.1s ease-in-out;
+        }
+      }
+  
+      // Ensure other divs transition smoothly when any div is hovered
+      div:not(:hover) {
+        flex: 1 !important; // Use !important to override inline styles
+      }
+    }
+  }
+  
