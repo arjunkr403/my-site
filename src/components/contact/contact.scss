@@ -8,10 +8,10 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  padding: 0 30px;
 
   @include mobile {
     width: 100%;
-    padding: 10px;
     flex-direction: column;
   }
 
@@ -22,10 +22,10 @@
     gap: 40px;
 
     @include mobile {
-      gap: 20px;
+      gap: 10px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
+      padding-top: 90px;
     }
 
     h1 {
@@ -33,12 +33,12 @@
       line-height: 88px;
 
       @include mobile {
-        font-size: 36px;
+        font-size: 40px;
       }
     }
 
     span {
-      font-weight: 300;
+      font-weight: 400;
     }
   }
 
@@ -47,7 +47,7 @@
     position: relative;
     
     @include mobile {
-      padding: 50px;
+      padding: 20px 70px;
       width: 100%;
     }
 
@@ -55,15 +55,27 @@
     .phoneSvg {
       stroke: orange;
       position: absolute;
-      margin: auto;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%);
       z-index: -1;
+
+      @include mobile{
+        svg{
+          text-align: center;
+          width: 320px;
+          height: 320px;
+        }
+      }
     }
 
     form {
       display: flex;
       flex-direction: column;
       gap: 20px;
-
+      @include mobile{
+        margin-bottom: 10px;
+      }
       input,
       textarea {
         padding: 20px;
@@ -71,13 +83,13 @@
         border: 1px solid white;
         color: white;
         border-radius: 5px;
-
+        
         @include mobile {
           padding: 10px;
         }
       }
-
       button {
+        border-radius: 5px;
         padding: 20px;
         border: none;
         background-color: orange;
@@ -91,3 +103,6 @@
     }
   }
 }
+
+
+

@@ -31,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_guvnifi",
+        "template_nxn9xmo",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "2HqUUgt0uLS18cGT-"
       )
       .then(
         (result) => {
@@ -56,17 +56,17 @@ const Contact = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
+        {/* <motion.div className="item" variants={variants}>
+          <h2>Name</h2>
+          <h3>Arjun Kumar Sharma</h3>
+        </motion.div> */}
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>hello@react.dev</span>
-        </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+          <h2>Email</h2>
+          <span>arjunkr403@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>+91 8287244734</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -111,7 +111,7 @@ const Contact = () => {
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}
-          {success && "Success"}
+          {success && "Thank You"}
         </motion.form>
       </div>
     </motion.div>
