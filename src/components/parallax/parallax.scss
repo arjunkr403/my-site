@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .parallax{
     height: 100%;
     width: 100%;
@@ -8,6 +9,12 @@
     overflow: hidden;
     h1{
         font-size: 100px;
+        @include tablet{
+            font-size: 90px;
+        }
+        @include mobile{
+            font-size: 70px;
+        }
     }
     .mountain{
         background-image: url("/mountains.png");
